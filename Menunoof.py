@@ -1,7 +1,7 @@
 def print_pattern():
     try:
         num = int(input("\033[31mOption: 1 \n \033[37mEnter the number of rows for the pattern:\033[31m "))
-        print('\033[31mOutput:\033[37m''')
+        print('\033[31mOutput:\033[37m')
         if num > 0:
             for i in range(num, 0, -1):
                 print("* " * i)
