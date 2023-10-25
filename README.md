@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Nawf Ali
+- 👋 Hi, I’m Noof Ali
 -  My email address: noof55ali@gmail.com
 -   My phone number: 92371980
 
