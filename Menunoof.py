@@ -23,6 +23,8 @@ def rotate_array():
         print("\033[31mOutput:\033[37m", rotated_array)
     except ValueError:
         print("Invalid input. Please enter valid values for n, k, and the array.")
+    except:
+        print("Invalid input. Enter Array Element corectly")
 
 def display_help():
     print("\033[31mOption: 3")
