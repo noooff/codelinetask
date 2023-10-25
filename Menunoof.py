@@ -1,4 +1,3 @@
-
 def print_pattern():
     try:
         num = int(input("\033[31mOption: 1 \n \033[37mEnter the number of rows for the pattern:\033[31m "))
@@ -11,11 +10,11 @@ def print_pattern():
     except ValueError:
         print("Invalid input. Please enter a valid number.")
 
-def filter_numbers():
+def rotate_array():
     print("\033[31mOption 2")
     try:
-        n = int(input("\033[37mEnter the number \033[34mof \033[37melements (n): "))
-        k = int(input("Enter the number \033[34mof \033[37msteps (k):\033[31m "))
+        n = int(input("\033[37mEnter the number \033[34mof \033[37melements (n): \033[31m"))
+        k = int(input("\033[37mEnter the number \033[34mof \033[37msteps (k):\033[31m "))
         array = [int(x) for x in input("\033[0mEnter the array elements seperated \033[34mby \033[37mspaces: \033[31m").split()]
         rotated_array = [0] * n
         for i in range(n):
@@ -28,30 +27,28 @@ def filter_numbers():
 def display_help():
     print("\033[31mOption: 3")
     print(" \033[37m--- Help ---")
-    print("Option 1: Print a pattern: with \033[2m'n' rows of decreasing asterisks.\033[0m")
-    print("Option 2: Rotate an array of \033[2m'n' element to right by 'k' steps.\033[0m")
-    print("Option 3: Display this help message.")
-    print("Option 4: Exit the program.")
+    print("\033[34mOption \033[31m1: \033[0mPrint a pattern: with \033[2m'n' rows of decreasing asterisks.\033[0m")
+    print("\033[34mOption \033[31m2: \033[0mRotate an array of \033[2m'n' element to right by 'k' steps.\033[0m")
+    print("\033[34mOption \033[31m3: \033[0mDisplay this help message.")
+    print("\033[34mOption \033[31m4: \033[0mExit the program.")
 
 def main():
     print("\nWelcome \033[34mto \033[37mthe Menu-Based program!")
     print("\nPlease \033[34mselect \033[37man \033[34moption: \033[37m ")
     print("\033[91m1. \033[37mPrint Pattern")
-    print("\033[91m2. \033[37mFilter Numbers")
+    print("\033[91m2. \033[37mRotate Array")
     print("\033[91m3. \033[37mHelp")
     print("\033[91m4. \033[34mExit")
     exit_program = False
 
     while not exit_program:
        
-       
-
-        choice = input("\n\033[37mPlease \033[34mselect \033[37man \033[34moption\033[37m:  ")
+        choice = input("\n\033[37mPlease \033[34mselect \033[37man \033[34moption\033[37m: ")
 
         if choice == '1':
             print_pattern()
         elif choice == '2':
-            filter_numbers()
+            rotate_array()
         elif choice == '3':
             display_help()
         elif choice == '4':
@@ -63,4 +60,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-1
