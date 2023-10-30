@@ -61,4 +61,4 @@ def main():
             print("Invalid choice. Please select a valid option (1-4).")
 
 if __name__ == "__main__":
-    task = main()
+    main()
