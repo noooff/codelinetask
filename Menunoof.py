@@ -1,3 +1,6 @@
+"""Ensure you are running the script in a terminal or command prompt that supports 
+interactive input. Some integrated development environments (IDEs) and text editors 
+may not provide a proper input interface"""
 def print_pattern():
     try:
         num = int(input("\033[31mOption: 1 \n \033[37mEnter the number of rows for the pattern:\033[31m "))
